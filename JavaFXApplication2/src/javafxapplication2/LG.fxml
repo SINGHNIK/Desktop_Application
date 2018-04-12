@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="529.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.FXMLDocumentController">
+     <children>
+      <Region layoutX="1.0" layoutY="1.0" prefHeight="487.0" prefWidth="229.0" />
+      <VBox layoutY="1.0" prefHeight="529.0" prefWidth="200.0">
+         <children>
+            <Button id="b1" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="71.0" prefWidth="203.0" text="Register Patient" />
+            <Button id="b2" mnemonicParsing="false" onAction="#handleButtonAction1" prefHeight="71.0" prefWidth="203.0" text="Existing Patient" />
+            <Button id="b3" mnemonicParsing="false" onAction="#handleButtonAction2" prefHeight="71.0" prefWidth="203.0" text="Documentation" />
+            <Button id="b4" defaultButton="true" mnemonicParsing="false" onAction="#handleButtonAction3" prefHeight="71.0" prefWidth="203.0" text="List Generation" />
+            <Button id="b5" mnemonicParsing="false" onAction="#handleButtonAction4" prefHeight="71.0" prefWidth="203.0" text="Feedback" />
+            <Button id="b6" mnemonicParsing="false" onAction="#handleButtonAction5" prefHeight="71.0" prefWidth="203.0" text="Lottery" />
+            <Button id="b7" mnemonicParsing="false" onAction="#handleButtonAction6" prefHeight="71.0" prefWidth="203.0" text="Analysis" />
+                        <Button id="b00" mnemonicParsing="false" onAction="#handleButtonAction7" prefHeight="71.0" prefWidth="203.0" text="ADMIN" />
+
+         </children>
+      </VBox>
+      <Button fx:id="PNGTF" layoutX="293.0" layoutY="190.0" mnemonicParsing="false" onAction="#List1" prefHeight="60.0" prefWidth="237.0" text="Patient Not Given The Feedback" />
+      <Button fx:id="PGTF" layoutX="293.0" layoutY="266.0" mnemonicParsing="false" onAction="#List2" prefHeight="60.0" prefWidth="237.0" text="Patient Given The Feedback" />
+   </children> 
+</AnchorPane>

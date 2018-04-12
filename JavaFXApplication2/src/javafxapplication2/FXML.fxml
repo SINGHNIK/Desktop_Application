@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.FXMLDocumentController">
+   <children>
+      <Region layoutX="1.0" layoutY="1.0" prefHeight="487.0" prefWidth="229.0" />
+      <VBox layoutY="1.0" prefHeight="487.0" prefWidth="200.0">
+         <children>
+            <Button id="b1" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="71.0" prefWidth="203.0" text="Register Patient" />
+            <Button id="b2" defaultButton="true" mnemonicParsing="false" onAction="#handleButtonAction1" prefHeight="71.0" prefWidth="203.0" text="Existing Patient" />
+            <Button id="b3" mnemonicParsing="false" onAction="#handleButtonAction2" prefHeight="71.0" prefWidth="203.0" text="Documentation" />
+            <Button id="b4" mnemonicParsing="false" onAction="#handleButtonAction3" prefHeight="71.0" prefWidth="203.0" text="List Generation" />
+            <Button id="b5" mnemonicParsing="false" onAction="#handleButtonAction4" prefHeight="71.0" prefWidth="203.0" text="Feedback" />
+             <Button id="b6" mnemonicParsing="false" onAction="#handleButtonAction5" prefHeight="71.0" prefWidth="203.0" text="Lottery" />
+            <Button id="b7" mnemonicParsing="false" onAction="#handleButtonAction6" prefHeight="71.0" prefWidth="203.0" text="Analysis" />
+                        <Button id="b00" mnemonicParsing="false" onAction="#handleButtonAction7" prefHeight="71.0" prefWidth="203.0" text="ADMIN" />
+
+         </children>
+      </VBox>
+      
+      <Label id="lb1" layoutX="219.0" layoutY="24.0" text="PID" />
+      <Label id="lb2" layoutX="219.0" layoutY="70.0" prefHeight="21.0" prefWidth="95.0" text="Patient Name" />
+      <Label layoutX="219.0" layoutY="116.0" prefHeight="21.0" prefWidth="105.0" text="Patient Address" />
+      <Label layoutX="273.0" layoutY="255.0" text="Gender" />
+      <Label layoutX="521.0" layoutY="255.0" text="Age" />
+      <Label layoutX="523.0" layoutY="24.0" text="Date" />
+      <Label layoutX="269.0" layoutY="299.0" prefHeight="21.0" prefWidth="56.0" text="Problem" />
+      <TextArea id="upr" fx:id="upr" layoutX="330.0" layoutY="299.0" prefHeight="49.0" prefWidth="402.0" />
+      <Label layoutX="297.0" layoutY="362.0" prefHeight="21.0" prefWidth="27.0" text="Dr." />
+      <Button id="b10" fx:id="svpr" layoutX="350.0" layoutY="432.0" mnemonicParsing="false" onAction="#SaveAndProceed1" prefHeight="49.0" prefWidth="160.0" text="Save and Proceed" />
+      <Button id="b11" layoutX="660.0" layoutY="432.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="160.0" text="Reset" />
+      <TextField fx:id="rpid" layoutX="328.0" layoutY="19.0" prefHeight="31.0" prefWidth="138.0" />
+      <DatePicker fx:id="upvd" layoutX="561.0" layoutY="19.0" prefHeight="31.0" prefWidth="169.0" />
+      <TextField fx:id="rpname" editable="false" layoutX="328.0" layoutY="65.0" prefHeight="31.0" prefWidth="402.0" />
+      <TextArea fx:id="rpadd" editable="false" layoutX="329.0" layoutY="110.0" prefHeight="118.0" prefWidth="402.0" />
+      <TextField fx:id="rpag" editable="false" layoutX="559.0" layoutY="250.0" prefHeight="31.0" prefWidth="49.0" />
+      <Button fx:id="up" layoutX="522.0" layoutY="432.0" mnemonicParsing="false" onAction="#up" prefHeight="49.0" prefWidth="124.0" text="Update" />
+      <TextField id="udr" fx:id="udr" layoutX="329.0" layoutY="357.0" prefHeight="49.0" prefWidth="402.0" />
+      <TextField fx:id="rpgen" layoutX="329.0" layoutY="250.0" prefHeight="31.0" prefWidth="105.0" />
+   </children>
+  
+</AnchorPane>

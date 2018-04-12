@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="488.0" prefWidth="834.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication2.FXMLDocumentController">
+
+   <children>
+      <Region layoutX="1.0" layoutY="1.0" prefHeight="487.0" prefWidth="229.0" />
+      <VBox layoutY="1.0" prefHeight="487.0" prefWidth="200.0">
+         <children>
+            <Button id="b1" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="71.0" prefWidth="203.0" text="Register Patient" />
+            <Button id="b2" mnemonicParsing="false" onAction="#handleButtonAction1" prefHeight="71.0" prefWidth="203.0" text="Existing Patient" />
+            <Button id="b3" defaultButton="true" mnemonicParsing="false" onAction="#handleButtonAction2" prefHeight="71.0" prefWidth="203.0" text="Documentation" />
+            <Button id="b4" mnemonicParsing="false" onAction="#handleButtonAction3" prefHeight="71.0" prefWidth="203.0" text="List Generation" />
+            <Button id="b5" mnemonicParsing="false" onAction="#handleButtonAction4" prefHeight="71.0" prefWidth="203.0" text="Feedback" />
+             <Button id="b6" mnemonicParsing="false" onAction="#handleButtonAction5" prefHeight="71.0" prefWidth="203.0" text="Lottery" />
+            <Button id="b7" mnemonicParsing="false" onAction="#handleButtonAction6" prefHeight="71.0" prefWidth="203.0" text="Analysis" />
+                        <Button id="b00" mnemonicParsing="false" onAction="#handleButtonAction7" prefHeight="71.0" prefWidth="203.0" text="ADMIN" />
+
+         </children>
+      </VBox>
+      
+      <Label id="lb1" layoutX="212.0" layoutY="52.0" text="PID" />
+      <TextArea fx:id="dptg" layoutX="333.0" layoutY="121.0" prefHeight="123.0" prefWidth="452.0" />
+      <DatePicker id="nxtvd" fx:id="nxvd" layoutX="622.0" layoutY="47.0" prefHeight="31.0" prefWidth="160.0" />
+      <Label layoutX="540.0" layoutY="52.0" text="Next Visit" />
+      <Button fx:id="snp3" layoutX="492.0" layoutY="432.0" mnemonicParsing="false" onAction="#SaveAndProceed3" prefHeight="49.0" prefWidth="160.0" text="Save and Proceed" />
+      <Button fx:id="rst3" layoutX="660.0" layoutY="432.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="160.0" text="Reset" />
+      <TextField fx:id="dpid" layoutX="284.0" layoutY="47.0" />
+      <Label layoutX="212.0" layoutY="121.0" text="Treatment Given" />
+      <Label layoutX="233.0" layoutY="274.0" text="Feedback Way " />
+      <Label layoutX="292.0" layoutY="332.0" text="Moc" />
+      <RadioButton fx:id="radoi3" layoutX="377.0" layoutY="274.0" mnemonicParsing="false" text="Paper">
+         <toggleGroup>
+            <ToggleGroup fx:id="FW" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radio4" layoutX="483.0" layoutY="274.0" mnemonicParsing="false" text="Mobile Application" toggleGroup="$FW" />
+      <TextField fx:id="moc" layoutX="342.0" layoutY="327.0" prefHeight="31.0" prefWidth="258.0" />
+   </children>
+  
+
+</AnchorPane>

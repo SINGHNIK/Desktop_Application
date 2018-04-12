@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="729.0" prefWidth="996.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="javafxapplication2.FXMLDocumentController">
+     <children>
+      <AnchorPane layoutX="-4.0" prefHeight="400.0" prefWidth="606.0">
+         <children>
+            <TableView layoutX="4.0" layoutY="-3.0" prefHeight="723.0" prefWidth="989.0">
+              <columns>
+                <TableColumn prefWidth="85.0" text="PID/Mob" />
+                <TableColumn prefWidth="280.0" text="PMAME" />
+                  <TableColumn minWidth="1.0" prefWidth="94.0" text="VDATE" />
+                  <TableColumn prefWidth="99.0" text="NDATE" />
+                  <TableColumn prefWidth="428.0" text="ADDRESS" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
